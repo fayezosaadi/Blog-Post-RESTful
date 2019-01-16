@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EA Games Review</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <div class="post-container">
+            <a><h1><%= post.title %></h1></a>
+            <h4>Author: <%= post.author %></h4>
+            <b />
+            <div class="post-body">
+                <p><%= post.content %></p>
+            </div>
+        </div>
+    </body>
+    <hr />
+    <div class="comments-container">
+        <div>Comments</div>
+        <% commentsList.forEach(comment => { %>
+            <% if (post.id === comment.postId ) { %>
+                <body>
+                <a href="posts/<%= comment.id %>"><h1><%= comment.title %></h1></a>
+                <h5>Author: <%= comment.author %></h5>
+                <b />
+                <div class="post-body">
+                    <p><%= comment.content %></p>
+                </div>
+                </body>
+                <% } %>
+        <%});%>
+        <hr />
+    </div>
+        <div class="create-comment-container">
+            <H6>Add a comment below:</H6>
+            <form action="comments/create/" method="post" name="ea-blog-comment">
+                <input name="postId" type="hidden" value="<%= post.id %>">
+                Author: <input type="text" name="author" required><br>
+                <textarea class="textarea-content" name="content" required></textarea>
+                <button class="submit-button">submit</button>
+            </form>
+        </div>
+</html>

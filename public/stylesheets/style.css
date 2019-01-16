@@ -1,0 +1,30 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+textarea {
+  height: 300px;
+  width: 500px;
+}
+
+.post-body {
+  background: antiquewhite;
+}
+
+.textarea-content {
+  display: block;
+  margin-top: 20px;
+}
+
+.post-container {
+  padding-bottom: 10%;
+}
+
+.comments-container {
+  padding-bottom: 10%;
+}

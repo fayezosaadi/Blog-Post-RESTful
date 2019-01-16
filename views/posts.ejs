@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>EA Games Review</title>
+      <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <% postsLists.forEach(post => { %>
+        <body>
+            <a href="posts/<%= post.id %>"><h1><%= post.title %></h1></a>
+            <h5>Author: <%= post.author %></h5>
+            <b />
+        </body>
+        <hr />
+    <%});%>
+</html>
