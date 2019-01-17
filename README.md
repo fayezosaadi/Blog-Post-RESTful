@@ -20,7 +20,6 @@ comments. It also has an RESTful api version that will response with JSON object
 * You can curl or use any http client app such as `Postman` to query the desired endpoint
 
 - Querying `/posts/api` will return a full list of posts
-- Querying `/posts/comments/api` will return a full list of comments
 - Querying `/posts/api/<postId>` will return a single post
 - Querying `/posts/api/comments/<postId>` will return a list of related comments
 - Posting into `/posts/api` will create a new post and return a success message
