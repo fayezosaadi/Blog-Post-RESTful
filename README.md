@@ -30,4 +30,9 @@ Dependencies:
 4.  Verify the container is up and running `docker ps`
 5.  Open the app on <http://localhost:3001/> and make sure that it's loading.
 
-## Link on production
+## Deploying into production
+
+You can push the docker container built in the previous steps into your cloud service of choice, I have decided to use
+Heroku:
+
+* link on production. `https://ea-blog-post.herokuapp.com/`
