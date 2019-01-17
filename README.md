@@ -5,7 +5,7 @@ A simple blog post application based on RESTful architecture that uses Express, 
 ## Technical Approach & Objectives
 
 The server is built with Node, Express and in memory storage and allows users to request and submit blog posts and
-comments via a JSON end-points.
+comments.
 
 ## Getting Started
 
