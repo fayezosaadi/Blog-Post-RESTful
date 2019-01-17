@@ -91,13 +91,13 @@ router.post("/api", async (req, res) => {
   // create post
   if (author && title && content) {
     await createPost({ author, title, content });
-    res.status(201).send("post has been created successfully");
+    res.status(201).send({ message: "post has been created successfully" });
+  } else {
+    res.status(400).send({
+      message:
+        "please make sure you have sent the correct post format: { auther, title, content }"
+    });
   }
-  res
-    .status(400)
-    .send(
-      "please make sure you have sent the correct post format: { auther: 'name', title: 'EA new game', and content: 'It's awesome' } "
-    );
 });
 
 // create a comment
@@ -106,13 +106,13 @@ router.post("/api/comments", async (req, res) => {
   // create post
   if (postId && author && content) {
     await createComment({ author, content, postId });
-    res.status(201).send("comment has been created successfully");
+    res.status(201).send({ message: "comment has been created successfully" });
+  } else {
+    res.status(400).send({
+      message:
+        "please make sure you have sent the correct post format: { auther, content, postId }"
+    });
   }
-  res
-    .status(400)
-    .send(
-      "please make sure you have sent the correct post format: { auther: 'name', content: 'EA new game', postId: '' } "
-    );
 });
 
 /* GET posts listing. */

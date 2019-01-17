@@ -46,3 +46,10 @@ You can push the docker container built in the previous steps into your cloud se
 Heroku:
 
 * link on production. `https://ea-blog-post.herokuapp.com/`
+
+## Running Tests:
+
+Tests are written to verify that the api endpoints are functioning as expected, they are written using Mocha
+framework and Chai assertion library, in order to run the tests, please use the following command:
+
+* npm run test
