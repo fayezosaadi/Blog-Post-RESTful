@@ -45,4 +45,4 @@ Dependencies:
 You can push the docker container built in the previous steps into your cloud service of choice, I have decided to use
 Heroku:
 
-* link on production. `https://ea-blog-post.herokuapp.com/`
+* link on production. <https://ea-blog-post.herokuapp.com/>
